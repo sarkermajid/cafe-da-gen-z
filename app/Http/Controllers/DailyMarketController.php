@@ -68,4 +68,11 @@ class DailyMarketController extends Controller
         $dailyMarket = DailyMarket::find($id);
         return view('admin.view_daily_market',compact('dailyMarket'));
     }
+
+    public function DeleteDailyMarket($id)
+    {
+        $dailyMarket = DailyMarket::find($id);
+        $dailyMarket->delete();
+        return redirect()->route('admin.daily.market')->with('success', 'Daily market deleted successfully!');
+    }
 }
