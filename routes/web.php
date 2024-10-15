@@ -51,6 +51,8 @@ Route::middleware('auth')->group(function () {
         Route::get('admin/daily-market', 'DailyMarket')->name('admin.daily.market');
         Route::get('admin/add-daily-market', 'AddDailyMarket')->name('admin.add.daily.market');
         Route::post('admin/store-daily-market', 'StoreDailyMarket')->name('admin.store.daily.market');
+        Route::get('admin/edit-daily-market/{id}', 'EditDailyMarket')->name('admin.edit.daily.market');
+        Route::post('admin/update-daily-market/{id}', 'UpdateDailyMarket')->name('admin.update.daily.market');
         Route::get('admin/view-daily-market/{id}', 'ViewDailyMarket')->name('admin.view.daily.market');
         Route::get('admin/delete-daily-market/{id}', 'DeleteDailyMarket')->name('admin.delete.daily.market');
     });
