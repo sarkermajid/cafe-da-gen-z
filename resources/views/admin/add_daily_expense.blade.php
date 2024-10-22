@@ -45,7 +45,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group mb-3">
                                             <label for="date" class="form-label">Date</label>
-                                            <input type="text" name="date"  class="form-control" placeholder="Today Date"
+                                            <input type="text" name="date" class="form-control" placeholder="Today Date"
                                                 id="date">
                                         </div>
                                     </div>

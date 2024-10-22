@@ -113,4 +113,9 @@ class DailyExpenseController extends Controller
         return redirect()->route('admin.daily.expense')->with('success', 'Daily Expenses Deleted Successfully!');
     }
 
+    public function ViewDailyExpense($id)
+    {
+        $dailyExpense = DailyExpense::find($id);
+        return view('admin.view_daily_expense',compact('dailyExpense'));
+    }
 }

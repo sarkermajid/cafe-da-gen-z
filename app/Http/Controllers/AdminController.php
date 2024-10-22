@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\DailyExpense;
+use App\Models\DailyMarket;
+use App\Models\DailySell;
 use App\Models\File;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -12,7 +15,10 @@ class AdminController extends Controller
 {
     public function AdminDashboard()
     {
-        return view('admin.index');
+        $totalDailyMarket = DailyMarket::count();
+        $totalDailyExpense = DailyExpense::count();
+        $totalDailySell = DailySell::count();
+        return view('admin.index',compact('totalDailyMarket', 'totalDailyExpense', 'totalDailySell'));
     }
 
     public function AdminLogout(Request $request)

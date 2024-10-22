@@ -8,12 +8,6 @@
                 <div class="card rounded">
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between mb-2">
-                            <div>
-                                <img class="wd-100 rounded-circle"
-                                    src="{{ !empty($profile->photo) ? url('uploads/admin_images/' . $profile->photo) : url('uploads/no_image.jpg') }}"
-                                    alt="profile">
-                                <span class="h4 ms-3 ">{{ $profile->username }}</span>
-                            </div>
                         </div>
 
                         <div class="mt-3">

@@ -63,6 +63,7 @@ Route::middleware('auth')->group(function () {
         Route::get('admin/add-daily-expense', 'AddDailyExpense')->name('admin.add.daily.expense');
         Route::post('admin/store-daily-expense', 'StoreDailyExpense')->name('admin.store.daily.expense');
         Route::get('admin/delete-daily-expense/{id}', 'DeleteDailyExpense')->name('admin.delete.daily.expense');
+        Route::get('admin/view-daily-expense/{id}', 'ViewDailyExpense')->name('admin.view.daily.expense');
     });
 });
 

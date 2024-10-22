@@ -26,8 +26,8 @@
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $item->date }}</td>
                                             <td>
-                                                <a href="{{ route('admin.view.daily.market', ['id'=>$item->id]) }}" class="btn btn-inverse-info"> View </a>
-                                                <a href="{{ route('admin.edit.daily.market', ['id'=>$item->id]) }}" class="btn btn-inverse-primary">Edit</a>
+                                                <a href="{{ route('admin.view.daily.expense', ['id'=>$item->id]) }}" class="btn btn-inverse-info"> View </a>
+                                                {{-- <a href="{{ route('admin.edit.daily.market', ['id'=>$item->id]) }}" class="btn btn-inverse-primary">Edit</a> --}}
                                                 <a href="{{ route('admin.delete.daily.expense',['id'=>$item->id]) }}" id="delete" class="btn btn-inverse-danger"> Delete </a>
                                             </td>
                                         </tr>

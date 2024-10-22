@@ -14,5 +14,44 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+            <div class="d-none d-md-block col-md-4 col-xl-4 left-wrapper">
+                <div class="card rounded">
+                    <div class="card-body">
+                        <div class="mt-1">
+                            <h3 class="text-center fw-bolder mb-0 text-uppercase">Total Daily Market</h3>
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="text-center fw-bolder mb-0 text-uppercase">{{ $totalDailyMarket }}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-4 col-xl-4 left-wrapper">
+                <div class="card rounded">
+                    <div class="card-body">
+                        <div class="mt-1">
+                            <h3 class="text-center fw-bolder mb-0 text-uppercase">Total Daily Expense</h3>
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="text-center fw-bolder mb-0 text-uppercase">{{ $totalDailyExpense }}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-4 col-xl-4 left-wrapper">
+                <div class="card rounded">
+                    <div class="card-body">
+                        <div class="mt-1">
+                            <h3 class="text-center fw-bolder mb-0 text-uppercase">Total Daily Sells</h3>
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="text-center fw-bolder mb-0 text-uppercase">{{ $totalDailySell }}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
 @endsection
