@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DailyExpenseController;
 use App\Http\Controllers\DailyMarketController;
 use App\Http\Controllers\DailySellController;
 use App\Http\Controllers\MenuPriceController;
@@ -55,6 +56,13 @@ Route::middleware('auth')->group(function () {
         Route::post('admin/update-daily-market/{id}', 'UpdateDailyMarket')->name('admin.update.daily.market');
         Route::get('admin/view-daily-market/{id}', 'ViewDailyMarket')->name('admin.view.daily.market');
         Route::get('admin/delete-daily-market/{id}', 'DeleteDailyMarket')->name('admin.delete.daily.market');
+    });
+
+    Route::controller(DailyExpenseController::class)->group(function () {
+        Route::get('admin/daily-expense', 'DailyExpense')->name('admin.daily.expense');
+        Route::get('admin/add-daily-expense', 'AddDailyExpense')->name('admin.add.daily.expense');
+        Route::post('admin/store-daily-expense', 'StoreDailyExpense')->name('admin.store.daily.expense');
+        Route::get('admin/delete-daily-expense/{id}', 'DeleteDailyExpense')->name('admin.delete.daily.expense');
     });
 });
 

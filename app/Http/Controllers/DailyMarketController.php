@@ -36,7 +36,7 @@ class DailyMarketController extends Controller
             $rules["{$field}_p"] = 'nullable|integer';
             $rules["{$field}_q"] = 'nullable|integer';
         }
-        $rules['date'] = 'nullable';
+        $rules['date'] = 'required';
 
         $request->validate($rules);
 
