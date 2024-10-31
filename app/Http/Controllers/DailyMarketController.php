@@ -78,7 +78,8 @@ class DailyMarketController extends Controller
             'sugar', 'vegetable', 'fish_sauce', 'bbq_sauce', 'soya_sauce',
             'cocoa_powder', 'choco_syrup', 'gas', 'electricity_bill', 'rent',
             'mushroom', 'black_olives', 'sausage', 'chicken_ball',
-            'momo_sheet'
+            'momo_sheet','chawmine','pasta','oster','chart','k_m','conflower','f_fry','c_wings',
+            'potato','vinegar','salt','c_fry','c_stacp','lemon','pudina','doi','transport'
         ];
 
         // Build validation rules dynamically for each item

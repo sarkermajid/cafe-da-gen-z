@@ -620,9 +620,9 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group mb-3">
-                                            <label for="salt_q" class="form-label">Salt Price</label>
-                                            <input type="text" name="salt_q"  class="form-control" placeholder="Price"
-                                                id="salt_q">
+                                            <label for="salt_p" class="form-label">Salt Price</label>
+                                            <input type="text" name="salt_p"  class="form-control" placeholder="Price"
+                                                id="salt_p">
                                         </div>
                                     </div>
                                 </div>

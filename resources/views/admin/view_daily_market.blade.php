@@ -211,6 +211,142 @@
                                 <td class="text-style">{{ $dailyMarket->momo_sheet_p }}</td>
                             </tr>
                             <tr>
+                                <td class="payment-title"><strong>Chawmine Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->chawmine_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Chawmine Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->chawmine_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Pasta Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->pasta_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Pasta Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->pasta_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Oster Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->oster_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Oster Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->oster_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Chart Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->chart_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Chart Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->chart_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Kashmiri Red Chilli Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->k_m_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Kashmiri Red Chilli Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->k_m_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Conflower Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->conflower_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Conflower Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->conflower_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>French Fry Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->f_fry_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>French Fry Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->f_fry_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Chicken Wings Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->c_wings_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Chicken Wings Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->c_wings_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Potato Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->potato_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Potato Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->potato_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Vinegar Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->vinegar_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Vinegar Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->vinegar_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Salt Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->salt_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Salt Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->salt_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Chicken Fry Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->c_fry_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Chicken Fry Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->c_fry_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Chicken Stacp Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->c_stacp_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Chicken Stacp Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->c_stacp_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Lemon Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->lemon_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Lemon Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->lemon_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Pudina Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->pudina_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Pudina Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->pudina_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Doi Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->doi_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Doi Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->doi_p }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Transport Quantity:</strong></td>
+                                <td class="text-style">{{ $dailyMarket->transport_q }}</td>
+                            </tr>
+                            <tr>
+                                <td class="payment-title"><strong>Transport Price :</strong></td>
+                                <td class="text-style">{{ $dailyMarket->transport_p }}</td>
+                            </tr>
+                            <tr>
                                 <td class="payment-title"><strong>Rent Bill :</strong></td>
                                 <td class="text-style">{{ $dailyMarket->rent_p }}</td>
                             </tr>
