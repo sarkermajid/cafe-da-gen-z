@@ -48,6 +48,13 @@
             </a>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.daily.profit') }}">
+              <i class="link-icon" data-feather="chevron-right"></i>
+              <span class="link-title">Daily Profit</span>
+            </a>
+          </li>
+
         </ul>
       </div>
     </nav>

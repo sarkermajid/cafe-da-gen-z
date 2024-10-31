@@ -61,7 +61,7 @@ class DailySellController extends Controller
 
     public function DailySells()
     {
-        $dailySells = DailySell::orderBy('created_at', 'asc')->paginate(10);
+        $dailySells = DailySell::orderBy('created_at', 'desc')->paginate(10);
         return view('admin.daily_sells',compact('dailySells'));
     }
 

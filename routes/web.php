@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DailyExpenseController;
 use App\Http\Controllers\DailyMarketController;
+use App\Http\Controllers\DailyProfitController;
 use App\Http\Controllers\DailySellController;
 use App\Http\Controllers\MenuPriceController;
 use App\Http\Controllers\UserController;
@@ -64,6 +65,11 @@ Route::middleware('auth')->group(function () {
         Route::post('admin/store-daily-expense', 'StoreDailyExpense')->name('admin.store.daily.expense');
         Route::get('admin/delete-daily-expense/{id}', 'DeleteDailyExpense')->name('admin.delete.daily.expense');
         Route::get('admin/view-daily-expense/{id}', 'ViewDailyExpense')->name('admin.view.daily.expense');
+    });
+
+    Route::controller(DailyProfitController::class)->group(function () {
+        Route::get('admin/daily-profit', 'DailyProfit')->name('admin.daily.profit');
+        Route::post('admin/calculate-daily-profit', 'CalculateDailyProfit')->name('admin.calculate.daily.profit');
     });
 });
 
