@@ -17,6 +17,7 @@
                                     <tr>
                                         <th>Sl</th>
                                         <th>Date</th>
+                                        <th>Total Expense</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -25,6 +26,7 @@
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $item->date }}</td>
+                                            <td>{{ $item->total_price.' BDT'}}  </td>
                                             <td>
                                                 <a href="{{ route('admin.view.daily.expense', ['id'=>$item->id]) }}" class="btn btn-inverse-info"> View </a>
                                                 {{-- <a href="{{ route('admin.edit.daily.market', ['id'=>$item->id]) }}" class="btn btn-inverse-primary">Edit</a> --}}

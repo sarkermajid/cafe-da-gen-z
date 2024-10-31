@@ -10,7 +10,7 @@ class DailyMarketController extends Controller
 {
     public function DailyMarket()
     {
-        $dailyMarkets = DailyMarket::orderBy('created_at', 'asc')->paginate(10);
+        $dailyMarkets = DailyMarket::orderBy('created_at', 'desc')->paginate(10);
         return view('admin.daily_market',compact('dailyMarkets'));
     }
 
@@ -34,8 +34,8 @@ class DailyMarketController extends Controller
         // Build validation rules dynamically for each item
         $rules = [];
         foreach ($fields as $field) {
-            $rules["{$field}_p"] = 'nullable|integer';
-            $rules["{$field}_q"] = 'nullable|integer';
+            $rules["{$field}_p"] = 'nullable|numeric';
+            $rules["{$field}_q"] = 'nullable|numeric';
         }
         $rules['date'] = 'required';
 
