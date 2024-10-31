@@ -38,7 +38,7 @@ class DailyExpenseController extends Controller
             "{$field}_q" => 'nullable|integer|min:0'
         ])->toArray();
         $rules['daily_market_id'] = 'required|exists:daily_markets,id';
-        $rules['date'] = 'required|date';
+        $rules['date'] = 'required';
         $request->validate($rules);
 
         // Retrieve the relevant DailyMarket entry
