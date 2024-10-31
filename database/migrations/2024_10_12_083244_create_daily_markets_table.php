@@ -90,6 +90,57 @@ return new class extends Migration
             $table->integer('momo_sheet_p')->nullable();
             $table->integer('momo_sheet_q')->nullable();
 
+            $table->integer('chawmine_p')->nullable();
+            $table->integer('chawmine_q')->nullable();
+
+            $table->integer('pasta_p')->nullable();
+            $table->integer('pasta_q')->nullable();
+
+            $table->integer('oster_p')->nullable();
+            $table->integer('oster_q')->nullable();
+
+            $table->integer('chart_p')->nullable();
+            $table->integer('chart_q')->nullable();
+
+            $table->integer('k_m_p')->nullable();
+            $table->integer('k_m_q')->nullable();
+
+            $table->integer('conflower_p')->nullable();
+            $table->integer('conflower_q')->nullable();
+
+            $table->integer('f_fry_p')->nullable();
+            $table->integer('f_fry_q')->nullable();
+
+            $table->integer('c_wings_p')->nullable();
+            $table->integer('c_wings_q')->nullable();
+
+            $table->integer('potato_p')->nullable();
+            $table->integer('potato_q')->nullable();
+
+            $table->integer('vinegar_p')->nullable();
+            $table->integer('vinegar_q')->nullable();
+
+            $table->integer('salt_p')->nullable();
+            $table->integer('salt_q')->nullable();
+
+            $table->integer('c_fry_p')->nullable();
+            $table->integer('c_fry_q')->nullable();
+
+            $table->integer('c_stacp_p')->nullable();
+            $table->integer('c_stacp_q')->nullable();
+
+            $table->integer('transport_p')->nullable();
+            $table->integer('transport_q')->nullable();
+
+            $table->integer('lemon_p')->nullable();
+            $table->integer('lemon_q')->nullable();
+
+            $table->integer('pudina_p')->nullable();
+            $table->integer('pudina_q')->nullable();
+
+            $table->integer('doi_p')->nullable();
+            $table->integer('doi_q')->nullable();
+
             $table->integer('salami')->nullable();
 
             $table->integer('total_price')->nullable();
