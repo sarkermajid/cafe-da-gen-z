@@ -70,6 +70,7 @@ Route::middleware('auth')->group(function () {
     Route::controller(DailyProfitController::class)->group(function () {
         Route::get('admin/daily-profit', 'DailyProfit')->name('admin.daily.profit');
         Route::post('admin/calculate-daily-profit', 'CalculateDailyProfit')->name('admin.calculate.daily.profit');
+        Route::get('admin/delete-daily-profit/{id}', 'DeleteDailyProfit')->name('admin.delete.daily.profit');
     });
 });
 

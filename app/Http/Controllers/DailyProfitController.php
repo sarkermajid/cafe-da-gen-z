@@ -30,4 +30,11 @@ class DailyProfitController extends Controller
         $dailyProfit->save();
         return redirect()->back()->with('success', 'Daily Profit Calculated successfully!');
     }
+
+    public function DeleteDailyProfit($id)
+    {
+        $dailyProfit = DailyProfit::find($id);
+        $dailyProfit->delete();
+        return redirect()->back()->with('success', 'Daily Profit deleted successfully!');
+    }
 }

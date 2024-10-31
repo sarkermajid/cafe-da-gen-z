@@ -28,12 +28,12 @@
                             <form method="POST" action="{{ route('admin.calculate.daily.profit') }}" class="forms-sample"
                                 id="myForm">
                                 @csrf
-                                <h3 class="text-center pb-5">Daily Profit Calculation</h3>
+                                <h4 class="text-center pb-5 text-uppercase">Daily Profit Calculation</h4>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group mb-3">
                                             <label for="date" class="form-label">Date</label>
-                                            <input type="text" name="date"  class="form-control" placeholder="Today Date"
+                                            <input type="text" name="date" required class="form-control" placeholder="Today Date"
                                                 id="date">
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@
                                                         <tr>
                                                             <th>Sl</th>
                                                             <th>Date</th>
-                                                            <th>Profit</th>
+                                                            <th>Total Profit</th>
                                                             <th>Action</th>
                                                         </tr>
                                                     </thead>
@@ -87,7 +87,7 @@
                                                                 <td>{{ $item->date }}</td>
                                                                 <td>{{ $item->profit.' BDT'}}</td>
                                                                 <td>
-                                                                    <a href="" id="delete" class="btn btn-inverse-danger"> Delete </a>
+                                                                    <a href="{{ route('admin.delete.daily.profit',['id'=>$item->id]) }}" id="delete" class="btn btn-inverse-danger"> Delete </a>
                                                                 </td>
                                                             </tr>
                                                         @endforeach
